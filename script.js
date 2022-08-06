@@ -24,3 +24,19 @@ burger.addEventListener('click', () => {
 navBar.addEventListener('scroll', () => {
     navBar.classList
 })
+
+const submit = document.querySelector('.submit')
+const HisName = document.getElementById('name')
+const email = document.getElementById('email')
+const message = document.getElementById('message')
+
+
+submit.addEventListener('click', (e) => {
+    // const getName = HisName.value 
+    // const getEmail = email.value 
+    // const getMessage = message.value
+    console.log('rak dkit')
+    HisName.value = ''
+    email.value = ''
+    message.value = ''
+})

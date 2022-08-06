@@ -30,6 +30,7 @@ nav{
     font-size: 30px;
     margin-left: 5%;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 .nav-links{
     display: flex;
@@ -333,14 +334,9 @@ nav{
     margin-top: 5rem;
     margin-bottom: 2rem;
     background-color: #fff1eb;
-    color: #072A40s;
+    color: #072A40;
     border-radius: 20px;
     cursor: pointer;
-}
-.main:hover{
-    background-color: rgb(36, 160, 238);
-    color: white;
-    transition: 0.3s ;
 }
 .main .project{
     width: 300px;
@@ -354,6 +350,30 @@ nav{
 }
 .project-info h2{
     text-align: center;
+}
+.project-info .visit{
+    height: 2rem;
+    padding: 10px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ace0f9;
+    border: none;
+    cursor: pointer;
+    color: #072A40;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
 }
 .sec-4{
     font-family: 'Poppins', sans-serif;
@@ -389,6 +409,13 @@ nav{
     border: none;
     margin: 1.5rem 0rem;
 }
+.form textarea{
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin: 1.5rem 0rem;
+}
 input[type=text] {
     height: auto;
     word-wrap: normal;
@@ -406,6 +433,9 @@ input[type=text] {
         width: 90%;
     }
     .form button{
+        width: 90%;
+    }
+    .form textarea{
         width: 90%;
     }
 }
