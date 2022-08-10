@@ -2,10 +2,9 @@
 :root{
     --light-orange: #072A40;
 }
-@media all and (max-width: 600px) {
-	head {
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	}
+html, body{
+overflow: hidden;
+position: relative;
 }
 *{
     margin: 0;
@@ -15,9 +14,6 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-body, html {
-overflow-x: hidden;
 }
 nav{
     display: flex;
