@@ -2,9 +2,10 @@
 :root{
     --light-orange: #072A40;
 }
-html, body{
-overflow: hidden;
-position: relative;
+ .site {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 *{
     margin: 0;
