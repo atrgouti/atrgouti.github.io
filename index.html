@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- this is only a test -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +14,10 @@
             <h4>BT</h4>
         </div>
         <ul class="nav-links">
-            <li class="about"><a href="#">About</a></li>
-            <li class="skills"><a href="#">Skills</a></li>
-            <li class="projects"><a href="#">Projects</a></li>
-            <li class="contact"><a href="#">Contact Me</a></li>
+            <li class="about"><a href="#">Home</a></li>
+            <li class="skills"><a href="#sec-2">Who am i?</a></li>
+            <li class="projects"><a href="#sec-3">Projects</a></li>
+            <li class="contact"><a href="#sec-4">Contact Me</a></li>
         </ul>
         <div class="burger">
             <div class="line-1"></div>
@@ -33,7 +32,7 @@
             Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal, documentary launch website, and donations webapp for a local charity. Passionate about software architecture and cloud computing. Regular attendee of web developer meetups and hackathons.
         </p>
         <div class="btn">
-            <a href="#sec-1"><button>About Me!</button></a>
+            <a href="#sec-3"><button>Projects</button></a>
             <a href="#sec-5"><button>Contact Me</button></a>
             
         </div>
@@ -42,52 +41,54 @@
     <div class="sec-2" id="sec-2">
         <div class="whoiam">
             <h1>Who am i?</h1>
-            <p>style zwin is a ecomerce website that i build using react js it has a fully paying functionalty using paypal and stripe.<br>the website has diffrent categories and add to card technologie so people can add to card items.</p>
+            <p>Hey, My name is bilal i am a web developer and an ex designer from Morocco, i have more than 3 years of experince building websites(both static and wordpress websites) i help small and mediem companies connect to the web and solve there problems. if you need help please feel free to contact me.</p>
         </div>
         <div class="vector">
             <img src="./myskill.jpg" alt="">
         </div>
     </div>
-    <div class="sec-3">
+    <div class="sec-3" id="sec-3">
         <h1>my recent projects</h1>
         <main class="main">
             <div class="project">
-                <img src="./background.png" alt="">
+                <img src="./Screenshot_1.png" alt="">
                 <div class="project-info">
-                    <h2>Style Zwin Store</h1>
-                    <p>style zwin is a ecomerce website that i build using react js it has a fully paying functionalty using paypal and stripe.<br>the website has diffrent categories and add to card technologie so people can add to card items.</p>
+                    <h2>Finance Instruct</h1>
+                    <p>i created this blog using wordpress and my mean goal was to make as simple as possible so visitors can easily interact and engage with the articles, and indeed the blog has been very successful and got very positive reviews.</p>
+                    <a href="https://financeinstruct.com"><button class="visit">visit project</button></a>
                 </div>
             </div>
         </main>
         <main class="main">
             <div class="project">
-                <img src="./background.png" alt="">
+                <img src="./habbatfit.png" alt="">
                 <div class="project-info">
-                    <h2>Style Zwin Store</h1>
-                        <p>style zwin is a ecomerce website that i build using react js it has a fully paying functionalty using paypal and stripe.<br>the website has diffrent categories and add to card technologie so people can add to card items.</p>
+                    <h2>Habbat Fit</h1>
+                        <p>Habbat fit is a landing page website that I built using html, css and javascript for a popular youtuber for his coaching brand. You can find on this landing page reviews of people he helped and information about him.</p>
+                        <button class="visit">visit project</button>
                 </div>
             </div>
         </main>
         <main class="main">
             <div class="project">
-                <img src="./background.png" alt="">
+                <img src="./habbatfit.png" alt="">
                 <div class="project-info">
                     <h2>Style Zwin Store</h1>
-                        <p>style zwin is a ecomerce website that i build using react js it has a fully paying functionalty using paypal and stripe.<br>the website has diffrent categories and add to card technologie so people can add to card items.</p>
-
+                        <p>Habbat fit is a landing page website that I built using html, css and javascript for a popular youtuber for his coaching brand. You can find on this landing page reviews of people he helped and information about him.s</p>
+                        <a href=""><button class="visit">visit project</button></a>
                 </div>
             </div>
         </main>
     </div>
-    <div class="sec-4">
+    <div class="sec-4" id="sec-4s">
         <h1>Contact Me</h1>
         <p>Got a question? I'de love to hear from you. Send me a message and i'll respond as soon as possible.</p>
-        <div class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="message">
-            <button type="submit">Submit</button>
-        </div>
+        <form class="form" action="https://formspree.io/f/xyyvyzne" method="post">
+            <input type="text" placeholder="Name" class="input" id="name" required>
+            <input type="email" placeholder="Email" class="input" id="email" required>
+            <textarea type="text" placeholder="message" class="input" id="message" required></textarea>
+            <button type="submit" class="submit">Submit</button>
+        </form>
     </div>
     <div class="sec-5" id="sec-5">
         <a href="https://www.instagram.com/batrgouti/"><i class="fab fa-instagram"></i></a>
