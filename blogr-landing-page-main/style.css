@@ -254,3 +254,95 @@ nav .nav-content{
         text-align: center;
     }
 }
+
+
+
+
+.sec-1{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    font-family: Roboto;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 9fr ;
+    grid-template-areas:
+    'header header'
+    'main img';
+}
+.sec-1 .mobile{
+    display: none;
+}
+.sec-1 header{
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 3%;
+   grid-area: header;
+}
+.sec-1 img{
+    grid-area: img;
+    width: 100%;
+    height: auto;
+    transform: translateX(20%);
+}
+.sec-1 main{
+    grid-area: main;
+    margin: 3rem;
+}
+.sec-1 main .content h1{
+    padding: 1rem 0rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+    .sec-1{
+        height: 150vh;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 2fr 6fr;
+        grid-template-areas:
+        'header'
+        'img'
+        'main';
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+    }
+    .sec-1 .desktop{
+        display: none;
+    }
+    .sec-1 .mobile{
+        display: block;
+    }
+    .sec-1 header{
+        text-align: center;
+        margin: 2.5rem 0rem;
+    }
+    .sec-1 img{
+        transform: translateX(0%);
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .content {
+        text-align: center;
+        margin: 1rem 0rem;
+    }
+    .content p{
+        font-weight: 200;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+.sec-2{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(208, 49%, 24%);
+}
