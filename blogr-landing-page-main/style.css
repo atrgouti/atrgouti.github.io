@@ -285,19 +285,30 @@ nav .nav-content{
     width: 100%;
     height: auto;
     transform: translateX(20%);
+    max-width: 600px;
 }
 .sec-1 main{
     grid-area: main;
     margin: 3rem;
+    max-width: 1300px;
 }
+/* .sec-1 main .content h1{
+    margin: 1rem 0rem;
+} */
 .sec-1 main .content h1{
     padding: 1rem 0rem;
     font-weight: bold;
+    color: hsl(208, 49%, 24%);
+}
+.content p{
+    max-width: 1000px;
+    width: 85%;
+    font-weight: 100;
 }
 
 @media screen and (max-width: 1000px){
     .sec-1{
-        height: 150vh;
+        height: 170vh;
         width: 100%;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 2fr 6fr;
@@ -333,6 +344,12 @@ nav .nav-content{
     .content p{
         font-weight: 200;
         font-size: 20px;
+        width: 100%;
+        font-weight: 100;
+    }
+    .sec-1 main .content-2{
+        padding: 1.8rem 0rem;
+        font-weight: bold;
     }
 }
 
@@ -342,7 +359,78 @@ nav .nav-content{
 
 
 .sec-2{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-color: hsl(208, 49%, 24%);
+    background-color: hsl(240, 10%, 16%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'phone'
+    'text';
+    font-family: Roboto;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.sec-2 img{
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-40%);
+    grid-area: phone;
+    max-width: 600px;
+}
+.sec-2 .content{
+    grid-area: 'text';
+    transform: translateY(-20%);
+}
+.sec-2 .content h1{
+    color: hsl(0, 0%, 100%);
+    width: 90%;
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+.sec-2 .content P {
+    color: hsl(0, 0%, 100%);
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 776px;
+}
+@media screen and (min-width: 1020px){
+    .sec-2 .content p{
+        max-width: 776px;
+    }
+    .sec-2 .content h1{
+        text-align: center;
+    }
+    .sec-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'phone text';
+    }
+    .sec-2 .content{
+        transform: translateY(0%);
+        margin-top: 20%;
+    }
+    .sec-2 .content h1{
+        text-align: start;
+        font-size: 2rem;
+        margin: 1.5rem 0px;
+    }
+    .sec-2 .content p{
+        text-align: left;
+        width: 80%;
+        margin: 0px;
+        text-align: left;
+    }
+    .sec-2 img{
+        transform: translateY(0%);
+    }
+}
+
+.sec-3{
+    height: 100vh ;
+    width: 100%;
 }
