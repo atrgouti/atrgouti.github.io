@@ -16,6 +16,7 @@
 body{
     font-family: Overpass;
     overflow-x: hidden;
+    font-family: Roboto;
 }
 .overflow{
     overflow-x: hidden;
@@ -25,7 +26,7 @@ nav{
     height: 100vh;
     width: 100%;
     font-family: Roboto;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 100PX;
 }
 .navbar{
     height: 16vh;
@@ -279,6 +280,8 @@ nav .nav-content{
    text-align: center;
    margin-top: 3%;
    grid-area: header;
+   color: hsl(208, 49%, 24%);
+   font-weight: bold;
 }
 .sec-1 img{
     grid-area: img;
@@ -304,6 +307,7 @@ nav .nav-content{
     max-width: 1000px;
     width: 85%;
     font-weight: 100;
+    color: hsl(207, 13%, 34%);
 }
 
 @media screen and (max-width: 1000px){
@@ -370,8 +374,8 @@ nav .nav-content{
     'phone'
     'text';
     font-family: Roboto;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-right-radius: 100PX;
+    border-bottom-left-radius: 100PX;
 }
 .sec-2 img{
     width: 100%;
@@ -433,4 +437,91 @@ nav .nav-content{
 .sec-3{
     height: 100vh ;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "computer info";
+}
+.sec-3 img{
+    grid-area: computer;
+    width: 100%;
+    margin: auto 0;
+    transform: translateX(-29%);
+}
+.sec-3 .info{
+    grid-area: info;
+    margin: auto 0;
+}
+
+.sec-3 .info h1{
+    color: hsl(208, 49%, 24%);
+    margin: 3rem 1rem 1rem 0;
+}
+.sec-3 .info p{
+    color: hsl(207, 13%, 34%);
+    width: 80%;
+}
+p{
+    line-height: 1.5rem;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 1020px){
+    .sec-3{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "computer"
+        'info';
+    }
+    .laptop-desktop{
+        display: none;
+    }
+    .sec-3 .mobile{
+       display: block;
+       transform: translateX(0);
+
+    }
+    .info{
+       padding-bottom: 3rem;
+    }
+    .info h1, .info p{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+.sec-4{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(240, 10%, 16%);
+    border-TOP-right-radius: 100PX;
+}
+.sec-4 h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+.attribution{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-align: center;
 }
