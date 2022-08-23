@@ -260,7 +260,7 @@ nav .nav-content{
 
 
 .sec-1{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: white;
     display: grid;
@@ -312,7 +312,7 @@ nav .nav-content{
 
 @media screen and (max-width: 1000px){
     .sec-1{
-        height: 170vh;
+        height: 100%;
         width: 100%;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 2fr 6fr;
@@ -345,6 +345,9 @@ nav .nav-content{
         text-align: center;
         margin: 1rem 0rem;
     }
+    .content-2{
+        margin-bottom: 6rem;
+    }
     .content p{
         font-weight: 200;
         font-size: 20px;
@@ -365,7 +368,7 @@ nav .nav-content{
 .sec-2{
     height: 80vh;
     width: 100%;
-    background-color: hsl(240, 10%, 16%);
+    background-color: hsl(208, 49%, 24%);
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
@@ -399,6 +402,11 @@ nav .nav-content{
     width: 90%;
     margin: 1rem auto;
     max-width: 776px;
+}
+@media screen and (max-width: 1020px){
+    .sec-2{
+        height: 100%;
+    }
 }
 @media screen and (min-width: 1020px){
     .sec-2 .content p{
@@ -470,11 +478,11 @@ p{
 }
 @media screen and (max-width: 1020px){
     .sec-3{
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.1fr;
         grid-template-areas: 
         "computer"
         'info';
@@ -488,7 +496,7 @@ p{
 
     }
     .info{
-       padding-bottom: 3rem;
+       padding-bottom: 0rem;
     }
     .info h1, .info p{
         text-align: center;
@@ -503,18 +511,73 @@ p{
 
 
 .sec-4{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-color: hsl(240, 10%, 16%);
     border-TOP-right-radius: 100PX;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'blogr product company connect';
 }
 .sec-4 h1{
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding-top: 3rem;
 }
+.sec-4 .product{
+    grid-area: product;
+    padding-top: 3rem;
+}
+.sec-4 .company{
+    grid-area: company;
+    padding-top: 3rem;
+}
+.sec-4 .connect{
+    grid-area: connect;
+    padding-top: 3rem;
+}
+.sec-4 ul{
+    padding-top: 2rem;
+    line-height: 1.7rem;
+    list-style: none;
+}
+.sec-4 ul li{
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    cursor: pointer;
+}
+.sec-4 ul li:hover{
+    color: hsl(0, 0%, 100%);
+}
+.sec-4 h3{
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px){
+    .sec-4{
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'blogr' 
+        'product' 
+        'company' 
+        'connect';
+        place-items: center;
+    }
+    .sec-4 h3{
+        text-align: center;
+    }
+    .sec-4 ul li{
+        text-align: center;
+        line-height: rem;
+    }
 
 
+
+}
 
 
 
