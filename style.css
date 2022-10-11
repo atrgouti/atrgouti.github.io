@@ -25,13 +25,16 @@ nav{
     background-color: #ace0f9; 
 }
 
-.logo{
-    color: #072A40;
+.logo img{
+    /* color: #072A40;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
     margin-left: 5%;
     letter-spacing: 5px;
+    cursor: pointer; */
+    width: 60px;
+    margin-left: 50px;
     cursor: pointer;
 }
 .nav-links{
@@ -214,6 +217,8 @@ nav{
     max-width: 800px;
     position: relative;
     top: 7vh;
+    text-align: center;
+    line-height: 30px;
 
 }
 .content{
